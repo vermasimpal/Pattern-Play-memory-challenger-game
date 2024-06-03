@@ -1,0 +1,78 @@
+
+body{
+   
+    text-align:center;
+    background-image: url("wood-ivy-green-leaves.jpg"); 
+    background-size: cover;
+    
+}
+h1{
+
+  font-size:2.8rem;
+}
+.btn{
+    height:160px;
+    width:160px;
+    border-radius:20%;
+    border: 10px solid black;
+    margin:1.2rem;
+}
+.btn-container{
+    display:flex;
+    justify-content:center;
+   
+
+}
+.red{
+    background-color: rgb(252, 12, 12);
+}
+.yellow{
+    background-color:yellow;
+}
+.green{
+    background-color: rgb(3, 251, 3);
+}
+.blue{
+    background-color:rgb(9, 9, 255);
+}
+.flash{
+    background-color: #fff;
+}
+.shadow{
+    box-shadow: 0px  0px 10px 2px  black;
+}
+.userflash{
+    background-color:green;
+}
+#highest-score{
+    font-weight: 500;
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+.shake {
+    animation: shake 0.5s;
+}
+@keyframes rotateButton {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .btn.rotate {
+    animation: rotateButton 0.5s linear; 
+  }
+  #highest-score{
+    font-weight: 900;
+    font-size:1.2rem;
+  }
+  .height{
+    line-height:1.5rem;
+  }

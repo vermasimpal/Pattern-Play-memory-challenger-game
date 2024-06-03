@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMON SAYS GAME</title>
+    <link rel = "stylesheet" href = "style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.1/tsparticles.min.js"></script>
+    <style>
+        #tsparticles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none; 
+        }
+    </style>
+</head>
+<body><div class="height">
+    <h1>Simon Says Game</h1>
+    <h2>Press Any Key To Start The Game</h2>
+    <p id="highest-score">Highest Score: 0</p></div>
+    <audio id = "BtnSound" src = "C:\Users\simpa\OneDrive\Documents\Desktop\SIMON GAME\btn-click.wav" preload="auto"></audio>
+    <audio id = "GameOver" src ="C:\Users\simpa\OneDrive\Documents\Desktop\SIMON GAME\game-over.wav" preload="auto"></audio>
+    <audio id = "LevelComplete" src ="C:\Users\simpa\OneDrive\Documents\Desktop\SIMON GAME\level-complete.wav" preload="auto"></audio>
+
+    <div class="btn-container">
+        <div class="line-one">
+            
+        <div class = "btn red" type="button" id = "red">1
+           
+    </div>
+        <div class = "btn yellow" type="button" id = "yellow">2</div>
+        </div>
+        <div class="line-two">
+        <div class = "btn green" type="button" id = "green">3</div>
+        <div class = "btn blue" type="button" id = "blue">4</div>
+        </div>
+    </div>
+    <div id="tsparticles"></div>
+    <script src= "app.js"></script>
+</body>
+</html>
